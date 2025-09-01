@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: run a hello world action 
+        uses: actions/hello-world_docker_action@v1
+
       - name: Install dependencies
         run: npm install
 
