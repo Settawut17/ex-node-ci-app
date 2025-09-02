@@ -2,7 +2,9 @@ export function add(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new TypeError('Inputs must be numbers');
   }
-  let result = a + b
-  return result;
+  // let result = a + b
+  // return result;
+
+  return eval(`${a} + ${b}`); //risk of code injection 
 
 }
