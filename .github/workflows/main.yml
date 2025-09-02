@@ -39,12 +39,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name : Initailize codeQL
-        uses: actions/codeql-action/init@v3
+        uses: github/codeql-action/init@v3
         with:
           languages : javascript-typescript
 
       - name : Perform codeQL analysis
-        uses: actions/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v3
     
 
 
