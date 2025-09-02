@@ -23,7 +23,7 @@ jobs:
           node-version: '18'
       
       - name: Install Dependencies
-        run: nun install
+        run: npm install
 
       - name: Run ESlint
         run: npm run lint 
